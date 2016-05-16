@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="src" path="config"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="lib/cpdetector_1.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/jchardet-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/htmlparser-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/htmllexer.jar"/>
+	<classpathentry kind="lib" path="lib/IKAnalyzer2012FF_u1.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-core-4.9.0.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-analyzers-common-4.9.0.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-highlighter-4.9.0.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/commons-io-2.3.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/cpdetector_1.0.7.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/htmllexer.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/htmlparser-2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/httpclient-4.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/httpcore-4.3.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/httpmime-4.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/IKAnalyzer2012FF_u1.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/jchardet-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/lucene-analyzers-common-4.9.0.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/lucene-core-4.9.0.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/lucene-highlighter-4.9.0.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/lukeall-4.9.0.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/noggit-0.5.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/slf4j-api-1.7.6.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/solr-core-4.9.0.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/solr-solrj-4.9.0.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/wstx-asl-3.2.7.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipsework/SearchRetrleve/lib/zookeeper-3.4.6.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-queryparser-4.9.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,18 @@
+俄罗斯总理梅德韦杰夫抵京访华
+2013年10月22日08:22
+新华网
+
+
+
+
+// <![CDATA[
+showVrsPlayer({vid: '1365924',pid: '223865857',width: '360',height: '305',autoplay: 'false',playercover: 'http://photocdn.sohu.com/20131022/2aecb4cd-6350-43db-ad59-f1f21af81d95_1365924_S_b.jpg',playerID:'player44',showCtrlBar:1});
+// ]]>
+																													
+_vid = "1365924"; _pid = "223865857"; _title = "俄罗斯总理梅德韦杰夫展开访华行程"; _url = "http://tv.sohu.com/20131022/n388638952.shtml"; cover = "http://photocdn.sohu.com/20131022/2aecb4cd-6350-43db-ad59-f1f21af81d95_1365924_S_b.jpg";
+　　新华网北京10月22日电 应国务院总理李克强邀请，俄罗斯联邦政府总理梅德韦杰夫22日凌晨抵达北京，开始对中国进行为期两天的正式访问。
+　　梅德韦杰夫访华期间，国家主席习近平将会见他，李克强将与他举行中俄总理第十八次定期会晤，全国人大常委会委员长张德江也将与他举行会见。
+　　在中俄总理会晤结束后，梅德韦杰夫将到新华社，通过新华网与中国网民进行在线交流互动，回答中国网民的提问。
+　　除北京外，梅德韦杰夫还将赴安徽访问。// <![CDATA[
+media_span_url('http://news.xinhuanet.com/world/2013-10/22/c_117811353.htm')
+//]]>
