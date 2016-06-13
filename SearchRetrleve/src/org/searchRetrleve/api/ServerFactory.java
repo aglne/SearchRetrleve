@@ -30,7 +30,8 @@ public class ServerFactory {
 					url=StringUtil.getPropertiesParams(ConstanParams.SOLR_URL, ConstanParams.PROPERTIES_FILE);
 				}
 				
-				String className=FullSolrService.class.getName();
+			//	String className=FullSolrService.class.getName();
+				String className=paramMap.get("className");
 				Class<?> c=Class.forName(className);			
 				service=(FullTextService) c.newInstance();				
 				service.beginService(serverName,url);

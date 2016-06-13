@@ -45,6 +45,54 @@ public class FullSolrService  extends FullTextServiceImpl {
 	}
 
 	@Override
+	public void preIndexMethod() {
+		// TODO Auto-generated method stub
+		super.preIndexMethod();
+	}
+
+	@Override
+	public void afterIndexMethod() {
+		// TODO Auto-generated method stub
+		super.afterIndexMethod();
+	}
+
+	@Override
+	public void updateIndex() {
+		// TODO Auto-generated method stub
+		super.updateIndex();
+	}
+
+	@Override
+	public void preUpdateIndex() {
+		// TODO Auto-generated method stub
+		super.preUpdateIndex();
+	}
+
+	@Override
+	public void afterUpdateIndex() {
+		// TODO Auto-generated method stub
+		super.afterUpdateIndex();
+	}
+
+	@Override
+	public void deleteIndex() {
+		// TODO Auto-generated method stub
+		super.deleteIndex();
+	}
+
+	@Override
+	public void preDeleteIndex() {
+		// TODO Auto-generated method stub
+		super.preDeleteIndex();
+	}
+
+	@Override
+	public void afterDeleteIndex() {
+		// TODO Auto-generated method stub
+		super.afterDeleteIndex();
+	}
+
+	@Override
 	public int beginService(String serverName) {
 		SolrServer solrServer=solrServerMap.get(serverName);
 		if(solrServer == null){
@@ -77,6 +125,10 @@ public class FullSolrService  extends FullTextServiceImpl {
 
 	@Override
 	public void doIndex(FullTextIndexParams params) {
+		long startIndexTime = System.currentTimeMillis();	
+		preIndexMethod();
+		long endIndexTime = System.currentTimeMillis();
+		System.out.println("before index time"+(endIndexTime-startIndexTime)+" ms ");
 		try{
 			List<SolrInputDocument> docList=new ArrayList<SolrInputDocument>();
 			List<Map<String, Object>> indexDataMap=params.getIndexData();
@@ -99,6 +151,11 @@ public class FullSolrService  extends FullTextServiceImpl {
 		}catch(Exception e){
 			e.printStackTrace();
 		}
+		
+		long startAfterIndexTime = System.currentTimeMillis();
+		afterIndexMethod();
+		long endAfterIndexTime = System.currentTimeMillis();
+		System.out.println("after index time"+(endAfterIndexTime-startAfterIndexTime)+" ms ");
 	}
 
 	@Override

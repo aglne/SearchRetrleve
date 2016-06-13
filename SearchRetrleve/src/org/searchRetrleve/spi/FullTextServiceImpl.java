@@ -45,4 +45,52 @@ public class FullTextServiceImpl  implements FullTextService{
 		return null;	
 	}
 
+	@Override
+	public void preIndexMethod() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void afterIndexMethod() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateIndex() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void preUpdateIndex() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void afterUpdateIndex() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteIndex() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void preDeleteIndex() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void afterDeleteIndex() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
