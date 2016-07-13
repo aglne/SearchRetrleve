@@ -58,7 +58,7 @@ public class FullTextServiceImpl  implements FullTextService{
 	}
 
 	@Override
-	public void updateIndex() {
+	public void updateIndex(FullTextIndexParams params) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -76,7 +76,7 @@ public class FullTextServiceImpl  implements FullTextService{
 	}
 
 	@Override
-	public void deleteIndex() {
+	public void deleteIndex(FullTextIndexParams params) {
 		// TODO Auto-generated method stub
 		
 	}

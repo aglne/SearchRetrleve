@@ -24,7 +24,7 @@ public interface FullTextService {
 	public  void afterIndexMethod();
 	
 	//修改索引
-	public  void updateIndex();
+	public  void updateIndex(FullTextIndexParams params);
 	
 	//修改索引之前
 	public  void preUpdateIndex();
@@ -33,7 +33,7 @@ public interface FullTextService {
 	public  void afterUpdateIndex();
 	
 	//删除索引
-	public  void deleteIndex();
+	public  void deleteIndex(FullTextIndexParams params);
 	
 	//删除索引之前
 	public  void preDeleteIndex();

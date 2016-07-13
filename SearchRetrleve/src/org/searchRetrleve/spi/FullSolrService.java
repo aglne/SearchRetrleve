@@ -57,9 +57,21 @@ public class FullSolrService  extends FullTextServiceImpl {
 	}
 
 	@Override
-	public void updateIndex() {
-		// TODO Auto-generated method stub
-		super.updateIndex();
+	public void updateIndex(FullTextIndexParams params) {
+		long startPreTime = System.currentTimeMillis();	
+		preUpdateIndex();
+		long endPreTime = System.currentTimeMillis();
+		System.out.println("before update time"+(startPreTime-endPreTime)+" ms ");
+		try{
+			deleteIndex(params);
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		
+		long startAfterTime = System.currentTimeMillis();
+		afterUpdateIndex();
+		long endAfterTime = System.currentTimeMillis();
+		System.out.println("after update time"+(endAfterTime-startAfterTime)+" ms ");
 	}
 
 	@Override
@@ -75,21 +87,37 @@ public class FullSolrService  extends FullTextServiceImpl {
 	}
 
 	@Override
-	public void deleteIndex() {
-		// TODO Auto-generated method stub
-		super.deleteIndex();
+	public void deleteIndex(FullTextIndexParams params) {
+		long startPreTime = System.currentTimeMillis();	
+		preDeleteIndex();
+		long endPreTime = System.currentTimeMillis();
+		System.out.println("before delete time"+(startPreTime-endPreTime)+" ms ");
+		try{
+			if(StringUtil.isNotEmpty(params.getId())){
+				this.solrServerMap.get(severName).deleteById(params.getId());
+			}else{
+				this.solrServerMap.get(severName).deleteById(params.getIds());
+			}
+				
+			this.solrServerMap.get(severName).commit();
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		
+		long startAfterDeleteTime = System.currentTimeMillis();
+		afterDeleteIndex();
+		long endAfterDeleteTime = System.currentTimeMillis();
+		System.out.println("after delete time"+(endAfterDeleteTime-startAfterDeleteTime)+" ms ");
 	}
 
 	@Override
 	public void preDeleteIndex() {
-		// TODO Auto-generated method stub
-		super.preDeleteIndex();
+		
 	}
 
 	@Override
 	public void afterDeleteIndex() {
-		// TODO Auto-generated method stub
-		super.afterDeleteIndex();
+		
 	}
 
 	@Override
